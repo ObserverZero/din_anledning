@@ -1,0 +1,289 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: "steelfish";
+  src: url("font/steelfish rg.ttf"); }
+@font-face {
+  font-family: "anabelle";
+  src: url("font/Anabelle Script Light.ttf"); }
+@font-face {
+  font-family: "anabelle_bold";
+  src: url("font/Anabelle Script.ttf"); }
+
+$wine: #800000;
+$menuShadows: #aaa;
+
+
+@font-face {
+  font-family: "steelfish";
+  src: url("font/steelfish rg.ttf"); }
+@font-face {
+  font-family: "anabelle";
+  src: url("font/Anabelle Script Light.ttf"); }
+@font-face {
+  font-family: "anabelle_bold";
+  src: url("font/Anabelle Script.ttf"); }
+
+$wine: #800000;
+$menuShadows: #aaa;
+
+.tabMenu, .desMenu, .contact {
+    display: none;
+}
+.logo {
+    width: 95%;
+    margin-left: 3%;
+    margin-top: 6%;
+}
+.navigation {
+    padding: .5em;
+    margin: 4% auto;
+    width: 80%;
+    border: solid #aaa 1px;
+    border-radius: 25px;
+    box-shadow: 0px 1px 3px 1px #888;
+    .mobMenu {
+        display: none;
+        font-family: steelfish;
+        font-size: 10vw;
+        color: $wine;
+        margin-left: 10%;
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+}
+.menuHandle {
+    margin-left: 40%;
+    margin-right: auto;
+    margin-bottom: 4%;
+    img {
+        width: 40%;
+    }
+}
+.content {
+    margin-left: 13%;
+    width: 74%;
+    h1 {
+        font-family: steelfish;
+        font-size: 8vw;
+        margin-bottom: 15pt;
+    }
+    img {
+        width: 100%;
+        border-radius: 10px;
+    }
+    h3 {
+        font-family: steelfish;
+        margin-top: 2vh;
+        margin-bottom: 1vh;
+        font-size: 9vw;
+    }
+    #meny {
+        background-color: #eee;
+        padding: 5%;
+        border-radius: 10px;
+        .pris {
+            font-style: italic;
+            margin-top: 1vh;
+            margin-bottom: 3vh;
+        }
+        h3 {
+            margin-top: 1vh;
+        }
+        li {
+            margin-top: 1vh;
+        }
+    }
+}
+.mobContact {
+    width: 87%;
+    margin-left: auto;
+    font-family: steelfish;
+    .tlf {
+        font-size: 13vw;
+        margin-top: 2%;
+    }
+    .email {
+        font-size: 12vw;
+    }
+}
+
+@font-face {
+  font-family: "steelfish";
+  src: url("font/steelfish rg.ttf"); }
+@font-face {
+  font-family: "anabelle";
+  src: url("font/Anabelle Script Light.ttf"); }
+@font-face {
+  font-family: "anabelle_bold";
+  src: url("font/Anabelle Script.ttf"); }
+$wine: #800000;
+$menuShadows: #aaa;
+@media screen and (min-width: 480px){
+    .desMenu .mobMenu, .menuHandle, .mobContact {
+        display: none;
+    }
+    .tabMenu, .contact {
+        display: block;
+    }
+    .tabMenu {
+        clear: both;
+        margin-left: 8%;
+
+    }
+    .navigation {
+        padding: .1%;
+        margin: .1%;
+        width: 100%;
+        border: none;
+        border-radius: none;
+        box-shadow: none;
+    }
+    .logo {
+        float: left;
+        width: 35%;
+        margin: .1%;
+        padding: .1%;
+        margin-left: 3%;
+    }
+    .contact {
+        width: 87%;
+        margin-left: auto;
+        font-family: steelfish;
+        padding-top: 1.5%;
+        .tlf, .email {
+            margin-left: 60%;
+            width: 100%;
+        }
+        .tlf {
+            font-size: 5vw;
+            margin-top: 1%;
+        }
+        .email {
+            font-size: 4.6vw;
+        }
+    }
+    .bigButtons {
+        width: 100%;
+        clear: both;
+        img {
+            border: 1px solid;
+            border-radius: 15px;
+            margin: 2vw;
+            max-height: 30vw;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+        }
+    }
+    .littleButtons {
+        margin-top: 6vw;
+        clear: both;
+        img {
+            border: 1px solid;
+            border-radius: 15px;
+            margin: 2vw;
+            max-height: 30vw;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+        }
+    }
+    .content {
+        margin-top: 4%;
+        #hero {
+            float: left;
+            width: 30%;
+        }
+        .story {
+            float: right;
+            width: 65%;
+        }
+    }
+}
+
+@media screen and (min-width: 960px){
+    .mobMenu, .tabMenu, .menuHandle, .mobContact {
+        display: none;
+    }
+    .desMenu, .contact {
+        display: block;
+    }
+    .topButtons {
+        width: 100%;
+        float: left;
+        img {
+            border: 1px #888 solid;
+            border-radius: 25px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            width: 15%;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                opacity: 50%;
+            }        
+
+        }
+    }
+    .bottomButtons {
+        margin-top: 2vw;
+        clear: both;
+        img {
+            border: 1px rgba(0,0,0,0) solid;
+            border-radius: 25px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-top: 2vw;
+            width: 15%;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                opacity: 50%;
+            }        
+
+        }
+    }
+}

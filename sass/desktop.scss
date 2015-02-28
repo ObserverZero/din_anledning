@@ -1,0 +1,45 @@
+@media screen and (min-width: 960px){
+    .mobMenu, .tabMenu, .menuHandle, .mobContact {
+        display: none;
+    }
+    .desMenu, .contact {
+        display: block;
+    }
+    .topButtons {
+        width: 100%;
+        float: left;
+        img {
+            border: 1px #888 solid;
+            border-radius: 25px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            width: 15%;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                opacity: 50%;
+            }        
+
+        }
+    }
+    .bottomButtons {
+        margin-top: 2vw;
+        clear: both;
+        img {
+            border: 1px rgba(0,0,0,0) solid;
+            border-radius: 25px;
+            margin-left: 1vw;
+            margin-right: 1vw;
+            margin-top: 2vw;
+            width: 15%;
+            box-shadow: 0px 1px 3px 1px $menuShadows;
+            float: left;
+            cursor: pointer;
+            &:hover {
+                opacity: 50%;
+            }        
+
+        }
+    }
+}
